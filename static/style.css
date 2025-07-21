@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.drag-area {
+    border: 2px dashed #764ba2;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drag-area:hover {
+    background: rgba(118, 75, 162, 0.05);
+}
+
+.drag-area h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.drag-area span {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    display: block;
+}
+
+.browse-btn {
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.browse-btn:hover {
+    background: #764ba2;
+}
+
+.options {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.options label {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.convert-btn, .download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.convert-btn:hover, .download-btn:hover {
+    background: #764ba2;
+}
+
+.preview-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.preview-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-preview {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

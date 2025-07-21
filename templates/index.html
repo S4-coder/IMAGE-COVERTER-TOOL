@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter & BG Remover</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Converter & Background Remover</h1>
+        <div class="upload-container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="drag-area">
+                    <div class="icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Drag & Drop</h3>
+                    <span>OR</span>
+                    <button type="button" class="browse-btn">Browse File</button>
+                    <input type="file" hidden accept="image/*" id="fileInput">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="removeBg"> Remove Background
+                    </label>
+                </div>
+                <button type="submit" class="convert-btn">Convert</button>
+            </form>
+        </div>
+        <div class="preview-container" style="display: none;">
+            <h2>Preview</h2>
+            <div class="image-preview">
+                <img id="previewImage" src="" alt="Preview">
+            </div>
+            <a id="downloadBtn" class="download-btn" download>Download PNG</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
