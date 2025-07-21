@@ -5,6 +5,16 @@
 [![PIL](https://img.shields.io/badge/Pillow-8.0+-orange.svg)](https://python-pillow.org/)
 [![rembg](https://img.shields.io/badge/rembg-latest-red.svg)](https://github.com/danielgatis/rembg)
 
+## 📸 Screenshot
+
+![App Screenshot](images/screenshot.png)
+
+### Demo: Background Removal
+
+| Original Image | After Background Removal |
+|:-------------:|:----------------------:|
+| ![Before](images/demo-before.jpg) | ![After](images/demo-after.png) |
+
 ## ✨ Features
 
 - 🔄 Convert any image format to PNG
